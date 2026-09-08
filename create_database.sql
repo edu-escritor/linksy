@@ -1,0 +1,5 @@
+CREATE USER linksy_dev
+WITH PASSWORD '12345678';
+
+CREATE DATABASE linksy
+OWNER linksy_dev;
