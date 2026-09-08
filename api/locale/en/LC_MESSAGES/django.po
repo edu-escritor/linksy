@@ -1,0 +1,2 @@
+msgid "page.title.default"
+msgstr "Linksy"

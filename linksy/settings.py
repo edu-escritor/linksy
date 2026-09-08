@@ -3,7 +3,6 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(BASE_DIR / ".env")
@@ -30,7 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "api"
+    "api",
 ]
 
 
@@ -112,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 
-LANGUAGE_CODE = os.getenv("LANGUAGE_CODE", "en-us")
+LANGUAGE_CODE = os.getenv("LANGUAGE_CODE", "en")
 
 TIME_ZONE = "UTC"
 
@@ -128,4 +127,3 @@ STATIC_URL = "static/"
 # Email
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
