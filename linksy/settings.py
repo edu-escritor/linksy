@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "api",
+    "django_extensions",
 ]
 
 
@@ -127,3 +128,10 @@ STATIC_URL = "static/"
 # Email
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Rest
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
+}

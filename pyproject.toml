@@ -5,6 +5,9 @@ version = "0.1.0"
 dependencies = [
     "asgiref==3.12.1",
     "Django==6.1.1",
+    "djangorestframework==3.18.1",
+    "djangorestframework_simplejwt==5.5.1",
+    "PyJWT==2.13.0",
     "psycopg==3.3.5",
     "psycopg-c==3.3.5",
     "python-dotenv==1.2.3",
@@ -17,6 +20,7 @@ dependencies = [
 dev = [
     "black==26.5.1",
     "click==8.5.0",
+    "django-extensions==4.1",
     "mypy_extensions==1.1.0",
     "packaging==26.3",
     "pathspec==1.1.1",
