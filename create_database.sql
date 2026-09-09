@@ -3,3 +3,5 @@ WITH PASSWORD '12345678';
 
 CREATE DATABASE linksy
 OWNER linksy_dev;
+
+ALTER USER linksy_dev CREATEDB;

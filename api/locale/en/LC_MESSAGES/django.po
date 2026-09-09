@@ -1,2 +1,17 @@
 msgid "page.title.default"
 msgstr "Linksy"
+
+msgid "error.invalid_color"
+msgstr "The given color '%(color)s' is invalid!"
+
+msgid "error.at_least_one_page"
+msgstr "You must have at lease one page!"
+
+msgid "error.negative_position"
+msgstr "Position must be zero or greater!"
+
+msgid "error.no_permission"
+msgstr "You do not have permission to access this item!"
+
+msgid "error.title_exists"
+msgstr "There's already an item with this title!"
