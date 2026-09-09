@@ -7,7 +7,7 @@
 Authenticates a user and returns access and refresh tokens.
 
 * **Method:** `POST`
-* **Route:** `/api/auth/login/`
+* **Route:** `/api/auth/login`
 * **Name:** `auth_login`
 
 #### Request
@@ -33,7 +33,7 @@ Authenticates a user and returns access and refresh tokens.
 Generates a new access token from a valid refresh token.
 
 **Method:** `POST`
-**Route:** `/api/auth/refresh/`
+**Route:** `/api/auth/refresh`
 **Name:** `auth_refresh`
 
 #### Request
@@ -65,7 +65,7 @@ Authorization: Bearer <access_token>
 Returns all pages belonging to the authenticated user.
 
 * **Method:** `GET`
-* **Route:** `/api/pages/`
+* **Route:** `/api/pages`
 * **Name:** `page-list`
 
 #### Response
@@ -86,7 +86,7 @@ Returns all pages belonging to the authenticated user.
 Returns a specific page belonging to the authenticated user.
 
 * **Method:** `GET`
-* **Route:** `/api/pages/{uuid}/`
+* **Route:** `/api/pages/{uuid}`
 * **Name:** `page-detail`
 
 #### Response
@@ -107,7 +107,7 @@ Returns a specific page belonging to the authenticated user.
 Creates a new page for the authenticated user.
 
 * **Method:** `POST`
-* **Route:** `/api/pages/`
+* **Route:** `/api/pages`
 * **Name:** `page-list`
 
 #### Request
@@ -133,12 +133,12 @@ Creates a new page for the authenticated user.
 }
 ```
 
-### PUT /api/pages/{uuid}/
+### PUT /api/pages/{uuid}
 
 Replaces the data of a specific page belonging to the authenticated user.
 
 * **Method:** `PUT`
-* **Route:** `/api/pages/{uuid}/`
+* **Route:** `/api/pages/{uuid}`
 * **Name:** `page-detail`
 
 #### Request
@@ -164,12 +164,12 @@ Replaces the data of a specific page belonging to the authenticated user.
 }
 ```
 
-### PATCH /api/pages/{uuid}/
+### PATCH /api/pages/{uuid}
 
 Partially updates a specific page belonging to the authenticated user.
 
 * **Method:** `PATCH`
-* **Route:** `/api/pages/{uuid}/`
+* **Route:** `/api/pages/{uuid}`
 * **Name:** `page-detail`
 
 #### Request
@@ -193,14 +193,14 @@ Partially updates a specific page belonging to the authenticated user.
 }
 ```
 
-### DELETE /api/pages/{uuid}/
+### DELETE /api/pages/{uuid}
 
 Deletes a specific page belonging to the authenticated user.
 
 The user's last remaining page cannot be deleted.
 
 * **Method:** `DELETE`
-* **Route:** `/api/pages/{uuid}/`
+* **Route:** `/api/pages/{uuid}`
 * **Name:** `page-detail`
 
 #### Response
